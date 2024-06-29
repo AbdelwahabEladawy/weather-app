@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="bg-dark-subtle">
+    <div class="container-fluid main ">
+      <!-- start nav  -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <img src="img/logo@2x.png" alt="logo" />
+          <a class="navbar-brand ps-3 fs-5 fw-bold text-light" href="#"
+            >weather app</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav w-100 d-flex justify-content-end">
+              <a class="nav-link active text-light pe-5 fs-5 fw-bold">Home</a>
+              <a class="nav-link text-light pe-5 fs-5 fw-bold" href="#">News</a>
+              <a class="nav-link text-light pe-5 fs-5 fw-bold" href="#"
+                >Live Cameras</a
+              >
+              <a class="nav-link text-light pe-5 fs-5 fw-bold" href="#"
+                >Photos</a
+              >
+              <a class="nav-link text-light pe-5 fs-5 fw-bold" href="#"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- end nav  -->
+
+      <!-- start main section -->
+      <div class="search d-flex mt-5 mb-5 ">
+        <input
+          type="text"
+          class="form-control rounded-5"
+          id="search-code"
+          placeholder="enter your location"
+        />
+        <button class="btn btn-lg btn-primary rounded-5 search-btn">Search</button>
+      </div>
+      <!-- end main section -->
+      <!-- start cards -->
+      <div class="card-group">
+        <div class="card bg-dark text-light text-center px-1 mb-2">
+            <div class="card-header">
+                <h3 id="day1">tuesday</h3>
+                <span id="date1">25-6-2024</span>
+            </div>
+          <div class="card-body text-center">
+            <h5 class="card-title location location" id="location" >Cairo</h5>
+            <p class="card-text">max : 40 <sup>o</sup> C</p>
+            <p class="card-text-min">min : 40 <sup>o</sup> C</p>
+            <img src="img/113.png" alt="sun">
+            <span>Sunny</span>
+            
+          </div>
+          <div class="card-footer">
+            <div class="other d-flex justify-content-between">
+            <div class="wind d-flex justify-content-center align-items-center">
+               <img src="img/icon-wind@2x.png" alt="wind">
+               <p class="ps-3">18 km/h</p>
+            </div>
+            <div class="wind d-flex justify-content-center align-items-center">
+               <img src="img/icon-compass@2x.png" alt="direction">
+               <p class="ps-3">East</p>
+            </div>
+            <div class="wind d-flex justify-content-center align-items-center">
+               <img src="img/icon-umberella@2x.png" alt="wind">
+               <p class="ps-3">20%</p>
+            </div>
+       
+            </div>
+          </div>
+        </div>
+        <div class="card bg-dark text-light text-center px-1 mb-2">
+            <div class="card-header">
+                <h3 id="day2">tuesday</h3>
+                <span id="date2">25-6-2024</span>
+            </div>
+          <div class="card-body">
+            <h5 class="card-title location " id="location2">Cairo</h5>
+            <p class="card-text">max : 40 <sup>o</sup> C</p>
+            <p class="card-text-min">min : 40 <sup>o</sup> C</p>
+            <img src="img/113.png" alt="sun">
+            <span>Sunny</span>
+            
+          </div>
+         
+        </div>
+        <div class="card bg-dark text-light text-center px-1 mb-2">
+            <div class="card-header">
+                <h3 id="day3">tuesday</h3>
+                <span id="date3">25-6-2024</span>
+            </div>
+          <div class="card-body">
+            <h5 class="card-title location " id="location3">Cairo</h5>
+            <p class="card-text">max : 40 <sup>o</sup> C</p>
+            <p class="card-text-min">min : 40 <sup>o</sup> C</p>
+            <img src="img/113.png" alt="sun">
+            <span>Sunny</span>
+            
+          </div>
+         
+        </div>
+    
+       
+      </div>
+      <!-- end cards -->
+<!-- start footer -->
+<div class="footer-form d-flex justify-content-center mt-5 ">
+    <input type="text" placeholder="enter your email to subscribe " class="form-control w-75 p-2 rounded-5">
+    <div class="btn btn-primary brn-lg rounded-5">Subscribe</div>
+</div>
+<div class="footer-icons text-center ">
+    <i class="fa-brands fa-instagram text-primary fs-1 px-3 my-3" ></i>
+    <i class="fa-brands fa-twitter text-primary fs-1 px-3 my-3" ></i>
+    <i class="fa-brands fa-google text-primary fs-1 px-3 my-3" ></i>
+    <i class="fa-brands fa-facebook text-primary fs-1 px-3 my-3" ></i>
+</div>
+
+
+
+<!-- end footer -->
+
+
+
+
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
